@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container video-list" pt-3>
+    <h1>Digital Forensic Software Download:</h1>
+    {% for item in object_list %}
+    <div class="media" mb-3>
+        <a href=""><img src="{{item.picture.url}}" class="mr-3" alt="" width="120"></a>
+        <div class="media-body">
+            <h5 class="mt-0"><a href="">{{item.name}}</a> </h5>
+            <ul>
+                <li>Link: <a href="{{item.educator}}">Tải về</a></li>
+                <li>{{item.num_lessons}}</li>
+            </ul>
+            {{item.excerpt}}
+  </div>
+</div>
+    {% endfor %}
+</div>
+{% endblock %}

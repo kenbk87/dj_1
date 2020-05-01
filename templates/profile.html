@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Điều chỉnh thông tin {% endblock %}
+{% block content %}
+    <div class="container">
+        <h1>Điều chỉnh thông tin</h1>
+        <p>Xin chào <strong> {{ user.username }} </strong></p>
+        <p>Email: {{ user.email }}</p>
+        <p>Last login: {{ user.last_login }}</p>
+
+        <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <p>
+                <button class="btn btn-primary">Update</button>
+            </p>
+        </form>
+
+        <p class="mt-4"><a href="{% url 'logout' %}" class="btn btn-danger">Thoát</a> </p>
+
+    </div>
+
+
+
+{% endblock %}

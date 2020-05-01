@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Đăng Nhập - Digital Forensic Solution (DFS) {% endblock %}
+
+{% block content %}
+<div class="container">
+   <div class="card mt-4">
+       <div class="card-body">
+           <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+               <button type="submit" class="btn btn-primary"> Đăng Nhập </button>
+           </form>
+       </div>
+   </div>
+</div>
+
+{% endblock %}
