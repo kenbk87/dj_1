@@ -17,11 +17,11 @@
       <Owner>Ken</Owner>
       <IntrospectionStateNumber>602</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|16453|16455|1
-sequence|table|16513|16515|1
-sequence|table|16409|16411|1
-sequence|table|16388|16390|1
+      <Relations>sequence|table|16388|16390|1
 sequence|table|16399|16401|1
+sequence|table|16513|16515|1
+sequence|table|16453|16455|1
+sequence|table|16409|16411|1
 sequence|table|16427|16429|1
 sequence|table|16417|16419|1
 sequence|table|16435|16437|1
